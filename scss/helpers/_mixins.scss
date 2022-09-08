@@ -34,6 +34,13 @@
   border-radius: $r;
 }
 
+@mixin maintransition ($t) {
+  -webkit-transition: $t;
+  -moz-transition: $t;
+  -o-transition: $t;
+  -ms-transition: $t;
+  transition: $t;
+}
 
 @mixin prefixer($property, $value, $prefixes: ()) {
   @each $prefix in $prefixes {
