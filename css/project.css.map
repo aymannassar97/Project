@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "project.scss"
-    ],
-    "names": [],
-    "file": "project.css"
-}
+{"version":3,"sources":["../scss/global/_main.scss","../scss/helpers/_mixins.scss","project.css"],"names":[],"mappings":"AAAA;ECuCI,8BDtC4B;ECsC5B,yBDtC4B;ECsC5B,0BDtC4B;ECwC9B,sBDxC8B;EAC9B,SAAA;EACA,UAAA;AEKF;;AFFE;EACE,gBAAA;EACA,UAAA;EACA,SAAA;AEKJ;;AFFA;EACE,qBAAA;AEKF;;AFHA;EACE,uBAAA;AEMF","file":"project.css"}
