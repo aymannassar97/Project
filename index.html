@@ -11,34 +11,79 @@
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css.map">
   <!-- Font Awesome Icon -->
   <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  <!-- Flag Icon -->
+  <link rel="stylesheet" href="node_modules/flag-icons/css/flag-icons.css">
+  <link rel="stylesheet" href="node_modules/flag-icons/css/flag-icons.min.css">
   <!-- Main Template Css File -->
   <link rel="stylesheet" href="css/project.css">
   <!-- Google Fonts -->
   <title>Project</title>
 </head>
 <body>
-  
-  <header>
-    <div class="data container">
-      <div class="my-data">
-        <span><a>For me</a></span>
-        <span><a>For my business</a></span>
+  <!-- Start Header -->
+  <header class="">
+    <div class="container data d-flex flex-column flex-lg-row align-items-center justify-content-between">
+
+
+      <!-- Start data -->
+      <div class="page d-flex flex-column flex-lg-row">
+        <span><a href="#" class="py-3 px-2 me-4 active">For me</a></span>
+        <span><a href="#" class="py-3 px-2">For my business</a></span>
       </div>
-      <div class="help">
-        <div class="dropdown">
-          <div class="btn">English</div>
-          <ul>
-            <li><a href="#">English</a></li>
-            <li><a href="#">Swedish</a></li>
+      <!-- End data -->
+
+
+      <div class="account d-flex flex-column flex-lg-row align-items-center ">
+        <!-- Start language -->
+        <div class="dropdown Options me-5">
+          <div class="position-relative Option-one py-2 pe-4" data-toggle="dropdown">
+            <span class="fi fi-us flag me-2"></span>English
+            <span class="up-down">
+              <i class="fa-solid fa-angle-down down"></i>
+            </span>
+          </div>
+          <ul class="dropdown-menu drop-menu rounded-3">
+            <li  class="dropdown-item"><span class="fi fi-us me-2"></span>
+              <a href="#" class="active ss">English</a></li>
+            <li  class="dropdown-item"><span class="fi fi-se me-2"></span>
+              <a href="#" class="ss">Swedish</a></li>
           </ul>
         </div>
+        <!-- End language -->
+        <!-- Start My Account -->
+        <div class="dropdown Options my-account me-5">
+          <div class="position-relative Option-one py-2 pe-4" id="" data-toggle="dropdown">
+            <i class="fa-regular fa-user me-2"></i>My account
+            <span class="up-down">
+              <i class="fa-solid fa-angle-down down"></i>
+            </span>
+          </div>
+            <ul class="dropdown-menu drop-menu rounded-3">
+              <li  class="dropdown-item">
+                Lorem, ipsum dolor &#174;
+            </li>
+            <li  class="dropdown-item">
+              Lorem, ipsum dolor &#174;
+            </li>
+            <li  class="dropdown-item">
+              Lorem, ipsum dolor &#174;
+            </li>
+            <li  class="dropdown-item">
+              Lorem, ipsum dolor &#174;
+            </li>
+          </ul>
+        </div>
+        <!-- End My Account -->
+        <!-- Start Help -->
+        <div class="help btn rounded-pill border-0 lead ">
+          Help?
+        </div>
+        <!-- End Help -->
       </div>
+      <!-- End account -->
     </div>
   </header>
-
-
-
-
+  <!-- End Header -->
 
 
 
