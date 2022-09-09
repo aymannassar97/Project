@@ -20,4 +20,142 @@ a {
 html {
   scroll-behavior: smooth;
 }
+
+header .data {
+  -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.08);
+}
+
+header .page span a {
+  color: black;
+  position: relative;
+}
+
+header .page span a.active {
+  font-weight: bold;
+}
+
+header .page span a::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 1px;
+  width: 0;
+  background-color: #e63946;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media (max-width: 991px) {
+  header .page span a::after {
+    display: none;
+  }
+}
+
+header .page span a:hover::after, header .page span a.active::after {
+  width: 100%;
+}
+
+header .drop-menu {
+  width: 13rem;
+}
+
+header .drop-menu .items {
+  cursor: pointer;
+  padding: 0.8rem 4rem 0.8rem 1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .drop-menu .items .active {
+  font-weight: bold;
+}
+
+header .drop-menu .items:hover {
+  padding-left: 1.5rem;
+}
+
+header .drop-menu .items a {
+  color: black;
+}
+
+header .drop-menu .items a:hover {
+  background-color: #e9ecef;
+}
+
+.up-down .down, .up-down .up {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  right: 0;
+  padding: 0.3rem;
+}
+
+.up-down .up {
+  display: none;
+}
+
+header .help {
+  background-color: #edf6f9;
+}
+
+header .help:hover {
+  background-color: #e9ecef;
+}
+
+@media (max-width: 991px) {
+  header .help {
+    background-color: white;
+  }
+  header .help:hover {
+    background-color: white;
+  }
+}
+
+.Options:hover .drop-menu {
+  display: block;
+}
+
+.Options .Option-one {
+  -webkit-transition: none;
+  transition: none;
+  cursor: pointer;
+}
+
+.Options .Option-one:hover {
+  color: #e63946;
+}
+
+.Options:hover .down {
+  color: #e63946;
+  display: none;
+}
+
+.Options:hover .up {
+  color: #e63946;
+  display: block;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+nav .nav-items li .active {
+  font-weight: bold;
+}
+
+nav .nav-items li a {
+  color: black;
+  font-size: 1.1rem;
+}
+
+nav .nav-items li a:hover {
+  color: #e63946;
+}
 /*# sourceMappingURL=project.css.map */
