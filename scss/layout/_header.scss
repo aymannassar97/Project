@@ -1,0 +1,32 @@
+header {
+  box-shadow: 0 .5rem 2rem rgba(0,0,0,.08);
+  .page {
+    span {
+      a {
+        color: black;
+        position: relative;
+        &.active {
+          font-weight: bold;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 5px;
+          left: 50%;
+          transform: translateX(-50%);
+          height: 1px;
+          width: 0;
+          background-color: $main-color;
+          @include maintransition ($--main-transition);
+          @media (max-width: 991px) {
+            display: none;
+          }
+        }
+        &:hover::after,
+        &.active::after{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

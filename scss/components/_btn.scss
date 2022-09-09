@@ -1,0 +1,15 @@
+header {
+  .help {
+    background-color: $section-background;
+    &:hover {
+      background-color: $bac-btn;
+      // color: $main-color;
+    }
+    @media (max-width: 991px) {
+      background-color: white;
+      &:hover {
+        background-color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.up-down {
+  .down, .up {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    right: 0;
+  }
+  .up {
+    display: none;
+  }
+}

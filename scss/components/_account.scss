@@ -1,0 +1,34 @@
+header {
+  .account {
+    .Options {
+      .Option-one {
+        &:hover {
+          color: $main-color;
+        }
+        cursor: pointer;
+      }
+    }
+  }
+  .drop-menu {
+    width: 13rem;
+    .dropdown-item {
+      cursor: pointer;
+      padding: 0.8rem 4rem 0.8rem 1rem ;
+      @include maintransition ($--main-transition);
+      .active {
+        font-weight: bold;
+      }
+      &:hover {
+        padding-left: 1.5rem;
+      }
+      a {
+        color: black;
+        &:hover {
+          background-color: $bac-btn;
+        }
+      }
+    }
+  }
+}
+
+
