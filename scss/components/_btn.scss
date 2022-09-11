@@ -1,15 +1,17 @@
-header {
-  .help {
-    background-color: $section-background;
+.help {
+  background-color: $section-background;
+  &:hover {
+    background-color: $bac-btn;
+    // color: $main-color;
+  }
+  @media (max-width: 767px) {
+    width: fit-content;
+    color: black;
+    margin: auto;
+    padding: 8px 40px;
     &:hover {
-      background-color: $bac-btn;
-      // color: $main-color;
-    }
-    @media (max-width: 991px) {
-      background-color: white;
-      &:hover {
-        background-color: white;
-      }
+      background-color: $main-color;
+      color: white;
     }
   }
 }
