@@ -9,4 +9,8 @@
   .up {
     display: none;
   }
+  @media (max-width: 767px) {
+    display: none;
+    // position: absolute;
+  }
 }
