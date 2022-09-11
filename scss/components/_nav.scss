@@ -1,7 +1,17 @@
 nav {
-  position: sticky;
-  top: 0;
   .nav-items {
+    width: 100%;
+    @media (min-width: 768px){
+      .Options,
+      .drop-menu {
+        position: relative;
+      }
+    }
+    ul {
+      @media (max-width: 767px) {
+        // background-color: white;
+      }
+    }
     li {
       .active {
         font-weight: bold;
@@ -14,5 +24,31 @@ nav {
         }
       }
     }
+    @media (max-width: 767px) {
+      margin-top: 0.5rem;
+    }
+  }
+  @media (max-width: 767px) {
+    position: static;
+    top: auto;
+    // background-color: white;
+  }
+}
+.nav-shadow.white {
+  background-color: white;
+  box-shadow: 0 .5rem 2rem rgba(0,0,0,.08);
+  @media (max-width: 767px) {
+    box-shadow: none;
+  }
+}
+.navb {
+  @media (max-width: 767px) {
+    max-width: 100%;
+  }
+}
+.nav-header {
+  @media (max-width: 767px) {
+    height: 100vh;
+    overflow: hidden;
   }
 }
