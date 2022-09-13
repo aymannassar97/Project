@@ -1,0 +1,14 @@
+.items {
+  a {
+    color: black;
+  }
+}
+.nav-link {
+  color: black;
+  @media (max-width: 767px) {
+    width: fit-content;
+  }
+  &:hover {
+    color: $main-color;
+  }
+}
