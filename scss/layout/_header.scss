@@ -1,6 +1,13 @@
 .nav-header {
   position: sticky;
   top: -45px;
+  z-index: 1000;
+  @media (max-width: 767px){
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+  }
 }
 .data {
   box-shadow: 0 .5rem 2rem rgba(0,0,0,.08);
@@ -15,6 +22,9 @@
         padding: 10px 20px;
         &.active {
           font-weight: bold;
+          @media (max-width: 767px) {
+            font-weight: normal;
+          }
         }
         &::after {
           content: "";
@@ -22,10 +32,10 @@
           bottom: 0;
           left: 50%;
           transform: translateX(-50%);
-          height: 1px;
+          height: 1.5px;
           width: 0;
           background-color: $main-color;
-          @include maintransition ($--main-transition);
+          @include maintransition ($main-transition);
           @media (max-width: 767px) {
             display: none;
           }
@@ -36,6 +46,11 @@
         }
         @media (max-width: 767px) {
           padding: 0;
+        }
+        @media (max-width: 767px) {
+          &:hover {
+            color: $main-color;
+          }
         }
       }
       @media (max-width: 767px) {
