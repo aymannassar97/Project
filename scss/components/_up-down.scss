@@ -1,16 +1,11 @@
-.up-down {
-  .down, .up {
-    top: 50%;
-    transform: translateY(-50%);
+.Option-one {
+  &::after {
+    font-family: "Font Awesome 6 Free";
+    content: "\f107";
+    font-weight: 900;
     position: absolute;
     right: 0;
-    padding: 0.3rem;
-  }
-  .up {
-    display: none;
-  }
-  @media (max-width: 767px) {
-    display: none;
-    // position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
