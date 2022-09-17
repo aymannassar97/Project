@@ -1,11 +1,46 @@
 @import "../scss/helpers/variables";
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+
+
+
 @import "../scss/helpers/mixins";
+
+// mixins
+@import "../scss/helpers/mixins/border-mixin";
+@import "../scss/helpers/mixins/media-mixin";
+@import "../scss/helpers/mixins/animation-mixin";
+@import "../scss/helpers/mixins/prefixer-mixin";
+@import "../scss/helpers/mixins/transition-mixin";
+
+@import "../scss/helpers/map";
+
 @import "../scss/global/main";
 
 @import "../scss/layout/header";
+@import "../scss/layout/main-content";
+@import "../scss/layout/footer";
 
-@import "../scss/components/account";
 @import "../scss/components/up-down";
 @import "../scss/components/btn";
 @import "../scss/components/drop-menu";
 @import "../scss/components/nav";
+@import "../scss/components/btn-colse-menu";
+@import "../scss/components/dropdown-mob";
+@import "../scss/components/hover-link";
+@import "../scss/components/main-btn";
+@import "../scss/components/cards";
+@import "../scss/components/text-card";
+
+
+
+
+

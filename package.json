@@ -20,6 +20,7 @@
     "@fortawesome/fontawesome-free": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "bootstrap": "^5.2.0",
+    "bootstrap-icons": "^1.9.1",
     "country-code-emoji": "^2.3.0",
     "country-flags-svg": "^1.1.6",
     "flag-icon": "^2.5.0",
