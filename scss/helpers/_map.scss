@@ -1,0 +1,18 @@
+// map socials icons color
+$socials: (
+  "facebook": #1876f2,
+  "twitter": #3a86ff,
+  "instgram": #9a1ffc,
+);
+
+@each $name, $color in $socials {
+  .#{$name} {
+    color: white;
+    @include maintransition ($main-transition);
+    &:hover {
+      color: $color;
+    }
+  }
+}
+
+
