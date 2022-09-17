@@ -1,0 +1,26 @@
+// media query mixin
+@mixin responsive($point) { 
+  @if $point == phone {
+    @media (max-width: 767px) { @content ; } 
+  } 
+  
+  @else if $point == tablet {
+    @media (min-width: 768px) { @content ; }
+  }
+
+  @else if $point == max-desktop {
+    @media (max-width: 991px) { @content ; }
+  }
+  
+  @else if $point == desktop {
+    @media (min-width: 992px) { @content ; }
+  }
+
+  @else if $point == large-screen  {
+    @media (max-width: 1199px) { @content ; }
+  }
+
+  @else if $point == xlarge-screen  {
+    @media (min-width: 1200px) { @content ; }
+  }
+}
