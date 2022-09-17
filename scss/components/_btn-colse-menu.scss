@@ -11,10 +11,8 @@
   outline: medium none;
   overflow: visible;
   text-align: center;
-  vertical-align: middle;  
-}
-
-.menu-toggle:before {
+  vertical-align: middle;
+  &:before {
     content: attr(data-label);
     display: block;
     padding: 12px 0;
@@ -23,69 +21,85 @@
     top: 50%;
     transform: translateY(-50%);
     transition: color 0.2s ease 0s, opacity 0.3s ease 0s, visibility 0.3s ease 0s;
+  }
 }
-
 .menu--is-revealed .menu-toggle:before {
-    opacity: 0;
-    visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
 }
-
-.menu-toggle .icon-bars, 
-.menu-toggle .icon-bars:before, 
-.menu-toggle .icon-bars:after {
-  transition: background-color 0.2s ease;
+.menu-toggle {
+  .icon-bars {
+    transition: background-color 0.2s ease;
+    &:before, &:after {
+      transition: background-color 0.2s ease;
+    }
+  }
+  &:focus .icon-bars {
+    background-color: $main-color;
+    &:before, &:after {
+      background-color: $main-color;
+    }
+  }
+  &:hover .icon-bars {
+    background-color: $main-color;
+    &:before, &:after {
+      background-color: $main-color;
+    }
+  }
+  .icon-bars {
+    transition: transform 0.3s ease-in, background-color 0.2s ease;
+    &:before, &:after {
+      transition: top 0.3s 0.3s ease-in, transform 0.3s ease-in, background-color 0.2s ease;
+    }
+  }
+  &:active .icon-bars {
+    transition: transform 0.3s 0.2s ease-in, background-color 0.2s ease;
+    transform: rotate3d(0, 0, 1, 135deg);
+  }
 }
-.menu-toggle:focus .icon-bars, 
-.menu-toggle:focus .icon-bars:before, 
-.menu-toggle:focus .icon-bars:after, 
-.menu-toggle:hover .icon-bars, 
-.menu-toggle:hover .icon-bars:before, 
-.menu-toggle:hover .icon-bars:after {
-  background-color: $main-color;
-}
-
-.menu-toggle .icon-bars {
-  transition: transform 0.3s ease-in, background-color 0.2s ease;
-}
-.menu-toggle .icon-bars:before, 
-.menu-toggle .icon-bars:after {
-  transition: top 0.3s 0.3s ease-in, transform 0.3s ease-in, background-color 0.2s ease;
-}
-
-.menu-toggle:active .icon-bars, 
 .menu--is-revealed .menu-toggle .icon-bars {
   transition: transform 0.3s 0.2s ease-in, background-color 0.2s ease;
   transform: rotate3d(0, 0, 1, 135deg);
 }
-.menu-toggle:active .icon-bars:before, 
-.menu-toggle:active .icon-bars:after, 
-.menu--is-revealed .menu-toggle .icon-bars:before, 
-.menu--is-revealed .menu-toggle .icon-bars:after {
-  transition: top 0.2s ease-in, transform 0.3s 0.2s ease-in, background-color 0.2s ease;
-  transform: rotate3d(0, 0, 1, 90deg);
-  top: 0;
+.menu-toggle:active .icon-bars {
+  &:before, &:after {
+    transition: top 0.2s ease-in, transform 0.3s 0.2s ease-in, background-color 0.2s ease;
+    transform: rotate3d(0, 0, 1, 90deg);
+    top: 0;
+  }
 }
-
+.menu--is-revealed .menu-toggle .icon-bars {
+  &:before, &:after {
+    transition: top 0.2s ease-in, transform 0.3s 0.2s ease-in, background-color 0.2s ease;
+    transform: rotate3d(0, 0, 1, 90deg);
+    top: 0;
+  }
+}
 .icon-bars {
   position: relative;
-}
-.icon-bars, .icon-bars:before, .icon-bars:after {
   display: block;
   width: 22px;
   height: 2px;
   background-color: currentColor;
-}
-.icon-bars, .icon-bars:before, .icon-bars:after {
+  &:before, &:after {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: currentColor;
+  }
   background-color: #273138;
-}
-.icon-bars:before, .icon-bars:after {
-  content: "";
-  position: absolute;
-  left: 0;
-}
-.icon-bars:before {
-  top: 0.5em;
-}
-.icon-bars:after {
-  top: -0.5em;
+  &:before, &:after {
+    background-color: #273138;
+  }
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+  &:before {
+    top: 0.5em;
+  }
+  &:after {
+    top: -0.5em;
+  }
 }
