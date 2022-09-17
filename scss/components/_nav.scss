@@ -1,26 +1,22 @@
 nav {
   .nav-items {
     width: 100%;
-    @media (min-width: 768px){
-      .Options,
-      .drop-menu {
-        position: relative;
-      }
-    }
-    ul {
-      @media (max-width: 767px) {
-        // background-color: white;
-      }
-    }
-    li {
-      .active {
+    .nav-item {
+      .active-1 {
         font-weight: bold;
+        color: white;
+          @media (max-width: 767px) {
+          color: black;
+        }
       }
-      a {
-        color: black;
+      .nav-link  {
         font-size: 1.1rem;
+        color: white;
         &:hover {
           color: $main-color;
+        }
+        @media (max-width: 767px) {
+          color: black;
         }
       }
     }
@@ -31,12 +27,46 @@ nav {
   @media (max-width: 767px) {
     position: static;
     top: auto;
-    // background-color: white;
   }
 }
 .nav-shadow.white {
   background-color: white;
   box-shadow: 0 .5rem 2rem rgba(0,0,0,.08);
+  .navb {
+    nav {
+      .navbar-nav {
+        .nav-item {
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 1px;
+            width: 0;
+            background-color: $main-color;
+            @include maintransition ($main-transition);
+            @media (max-width: 767px) {
+              display: none;
+            }
+          }
+          &:hover::before,
+          &.active::before{
+            width: 100%;
+          }
+        }
+        .nav-link {
+          color: black;
+          &:hover {
+            color: $main-color;
+          }
+        }
+        .active {
+          color: black;
+        }
+      }
+    }
+  }
   @media (max-width: 767px) {
     box-shadow: none;
   }
@@ -46,9 +76,4 @@ nav {
     max-width: 100%;
   }
 }
-.nav-header {
-  @media (max-width: 767px) {
-    height: 100vh;
-    overflow: hidden;
-  }
-}
+
