@@ -1,27 +1,14 @@
-.Options {
-  &:hover .drop-menu {
-    display: block;
-  }
-  .Option-one {
-    transition: none;
-    padding-right: 30px;
+.drop-menu {
+  .items {
     cursor: pointer;
-    &:hover {
-      color: $main-color;
+    padding: 0.8rem 1rem 0.8rem 1rem ;
+    @include maintransition ($main-transition);
+    .active {
+      font-weight: bold;
     }
-    @media (max-width: 767px){
+    @media (max-width: 767px) {
       width: fit-content;
-      padding-right: 0;
+      padding: 0.8rem 1rem 0.8rem 1rem;
     }
-  }
-
-
-  &:hover .down{
-    color: $main-color;
-    display: none;
-  }
-  &:hover .up{
-    color: $main-color;
-    display: block;
   }
 }
