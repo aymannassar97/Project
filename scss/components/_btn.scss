@@ -1,14 +1,16 @@
-.help {
-  background-color: $section-background;
+.contact {
+  background-color: $main-color;
+  color: white;
+  transition: $main-transition;
   &:hover {
     background-color: $bac-btn;
-    // color: $main-color;
   }
   @media (max-width: 767px) {
     width: fit-content;
     color: black;
     margin: auto;
     padding: 8px 40px;
+    font-weight: bold;
     &:hover {
       background-color: $main-color;
       color: white;
