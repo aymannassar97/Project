@@ -1,0 +1,36 @@
+.cards {
+  .body-card {
+    .text-card {
+      @media (max-width: 991px) {
+        max-width: 30rem;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        padding: 80px 30px 30px;
+        margin-bottom: 20px;
+        @include border-radius (25px);
+        box-shadow: 0 8px 32px rgba(0,0,0,.08)
+      }
+      h5 {
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 17px;
+      }
+      h1 {
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+      p {
+        color: $main-color-p;
+        font-size: 18px;
+      }
+      a {
+        color: $main-color;
+        font-size: 17px;
+        &:hover {
+          color: $hover-color;
+        }
+      }
+    }
+  }
+}
