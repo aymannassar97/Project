@@ -3,37 +3,9 @@
     .drop-menu {
       @include border-radius (10px);
       @media (max-width: 767px) {
-        display: none;
-        // display: block;
-        position: absolute;
-        right: -120%;
-        width: 100%;
-        top: 20px;
-        height: calc(100vh - 100px);
         border: none;
-        border-radius: 0;
-        transition: 1s;
-        right: 0;
-        z-index: 1;
-        @include border-radius (0);
+        width: 100%;
       }
     }
   }
 }
-// .navbar-nav {
-//   .drop-menu {
-//     @media (max-width: 767px){
-//       position: absolute;
-//       // display: block;
-//     }
-//   }
-// }
-
-// .account{
-//   .drop-menu {
-//     @media (max-width: 767px){
-//       // position: absolute;
-//       // display: block;
-//     }
-//   }
-// }
