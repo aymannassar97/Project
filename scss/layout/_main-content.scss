@@ -24,7 +24,7 @@
     .text {
       position: absolute;
       top: 50%;
-      @include maintransform (translateY(-50%))
+      @include maintransform (translateY(-50%));
       max-width: 70%;
       color: white;
       @media (max-width: 767px) {
@@ -40,7 +40,7 @@
           position: absolute;
           left: 0;
           top: 50%;
-          @include maintransform (translateY(-50%))
+          @include maintransform (translateY(-50%));
           height: 1px;
           width: 40px;
           background-color: white;
