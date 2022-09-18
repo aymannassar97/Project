@@ -9,3 +9,11 @@
     @content;
   }
 }
+
+@mixin mainanimation ($an) {
+  -webkit-animation: $an;
+  -moz-animation: $an;
+  -o-animation: $an;
+  -ms-animation: $an;
+  animation: $an;
+}
