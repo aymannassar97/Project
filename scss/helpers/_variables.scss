@@ -1,11 +1,13 @@
-$main-color: #5fa8d3;
-$secondary-color: #f2f2f2;
-$main-color-p: #585b5b;
+$main-color: rgb(35, 33, 91);
+$secondary-color: #faaf11;
 
-$hover-color: #01497c;
+$main-color-p: #6c757d;
+$secondary-color-p: #ced4da;
+
+$hover-color: $main-color;
 
 $section-background: #edf6f9;
-$bac-btn: #e9ecef;
+
 
 $main-transition: 0.3s;
 
