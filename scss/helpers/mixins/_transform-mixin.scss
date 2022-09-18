@@ -1,0 +1,7 @@
+@mixin maintransform ($tf) {
+  -webkit-transform: $tf;
+  -moz-transform: $tf;
+  -o-transform: $tf;
+  -ms-transform: $tf;
+  transform: $tf;
+}
