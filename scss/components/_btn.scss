@@ -1,9 +1,9 @@
 .contact {
   background-color: $main-color;
-  color: white;
   transition: $main-transition;
+  color: white;
   &:hover {
-    background-color: $bac-btn;
+    background-color: $secondary-color;
   }
   @media (max-width: 767px) {
     width: fit-content;
