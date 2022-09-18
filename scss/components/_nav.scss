@@ -13,7 +13,7 @@ nav {
         font-size: 1.1rem;
         color: white;
         &:hover {
-          color: $main-color;
+          color: $secondary-color;
         }
         @media (max-width: 767px) {
           color: black;
@@ -41,7 +41,7 @@ nav {
             position: absolute;
             bottom: -8px;
             left: 50%;
-            transform: translateX(-50%);
+            @include maintransform (translateX(-50%));
             height: 1px;
             width: 0;
             background-color: $main-color;
