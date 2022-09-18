@@ -36,7 +36,7 @@
           position: absolute;
           bottom: 0;
           left: 50%;
-          transform: translateX(-50%);
+          @include maintransform (translateX(-50%))
           height: 1.5px;
           width: 0;
           background-color: $main-color;
