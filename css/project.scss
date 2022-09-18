@@ -12,7 +12,7 @@
 
 
 
-@import "../scss/helpers/mixins";
+// @import "../scss/helpers/mixins";
 
 // mixins
 @import "../scss/helpers/mixins/border-mixin";
@@ -20,6 +20,7 @@
 @import "../scss/helpers/mixins/animation-mixin";
 @import "../scss/helpers/mixins/prefixer-mixin";
 @import "../scss/helpers/mixins/transition-mixin";
+@import "../scss/helpers/mixins/transform-mixin";
 
 @import "../scss/helpers/map";
 
@@ -39,6 +40,7 @@
 @import "../scss/components/main-btn";
 @import "../scss/components/cards";
 @import "../scss/components/text-card";
+@import "../scss/components/to-top";
 
 
 
