@@ -27,6 +27,7 @@
         padding: 10px 20px;
         &.active {
           font-weight: bold;
+          color: $secondary-color;
           @media (max-width: 767px) {
             font-weight: normal;
           }
