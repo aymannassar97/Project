@@ -2,7 +2,7 @@ footer {
   background-color: $main-color;
   padding-top: $padding-top +3rem;
   padding-bottom: $padding-bottom - 2rem;
-  .Waves {
+  .waves {
     svg {
       position: absolute;
       width: 100%;
@@ -10,7 +10,7 @@ footer {
       top: -1px;
       left: 0;
       fill: #fff;
-      transform: rotatex(180deg);
+      @include maintransform (rotatex(180deg));
     }
   }
   .foot {
