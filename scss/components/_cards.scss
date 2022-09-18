@@ -37,7 +37,7 @@
 .card-one {
   .img-card, .text-card {
     &::before {
-      content: "\f164";
+      content: "\f3ce";
       @extend %wavy-icon;
       right: -50px;
       bottom: 15px;
