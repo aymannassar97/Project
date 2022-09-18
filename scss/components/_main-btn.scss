@@ -1,23 +1,22 @@
 .main-btn {
-  background-color: $main-color;
+  background-color: $secondary-color;
   width: fit-content;
   display: flex;
   align-items: center;
   a {
-    padding: 15px;
+    padding: 17px 23px 17px 17px;
     color: white;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 13px;
     &:hover svg {
-      animation: moving-arrow 0.5s linear infinite;
-      animation-direction: alternate;
+      @include mainanimation (moving-arrow 0.5s linear infinite alternate);
     }
     svg {
-      margin-left: 25px;
+      margin-left: 20px;
       @include keyFrame(moving-arrow) {
         100% {
-          transform: translateX(10px);
+          @include maintransform (translateX(10px))
         }
       }
     }
