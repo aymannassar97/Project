@@ -6,17 +6,17 @@
 }
 
 
-// @mixin get-bootstrap-icon($icon-name, $icon-color: $primary) {
-//   display: inline-block;
-//   content: "";
-//   width: 1.2em;
-//   height: 1.2em;
-//   vertical-align: -.3em;
-//   background-color: $icon-color;
-//   mask-image: url("#{$bootstrap-icons-path}/#{$icon-name}.svg");
-//   mask-repeat: no-repeat;
-//   background-size: 1em 1em;
-// }
+@mixin get-bootstrap-icon($icon-name, $icon-color: $primary) {
+  content: "";
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: -.3em;
+  background-color: $icon-color;
+  mask-image: url("#{$bootstrap-icons-path}/#{$icon-name}.svg");
+  mask-repeat: no-repeat;
+  background-size: 1em 1em;
+}
 // ----------------------------
 // .views-display-link-widget {
 //     &::before {
