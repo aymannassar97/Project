@@ -1,68 +1,37 @@
 .nav-header {
+  display: flex;
+  flex-direction: column;
   position: sticky;
   top: -45px;
   z-index: 1000;
+  @include maintransition (right ease-in $main-transition);
   @media (max-width: 767px){
     position: fixed;
-    top: 0;
-    width: 100%;
+    width: 350px;
+    overflow-y: auto;
     background-color: white;
+    height: calc(100vh - 48px);
+    top: 48px;
+    padding: 0 15px;
+    z-index: 1000;
+    right: -100%;
+    box-shadow: 0 25px 40px rgba(0,0,0,.2);
   }
-  &.container {
+  .account {
+    .options {
+      .option-one {
+        color: black;
+        cursor: pointer;
+        @include maintransition ($main-transition);
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
     @media (max-width: 767px) {
       max-width: 100%;
+      margin: 0;
+      gap: 140px 0;
     }
   }
-}
-.data {
-  box-shadow: 0 .5rem 2rem rgba(0,0,0,.08);
-  @media (max-width: 767px) {
-    box-shadow: none;
-  }
-  .page {
-    span {
-      a {
-        color: black;
-        position: relative;
-        padding: 10px 20px;
-        &.active {
-          font-weight: bold;
-          color: $secondary-color;
-          @media (max-width: 767px) {
-            font-weight: normal;
-          }
-        }
-        &::after {
-          content: "";
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          @include maintransform (translateX(-50%))
-          height: 1.5px;
-          width: 0;
-          background-color: $main-color;
-          @include maintransition ($main-transition);
-          @media (max-width: 767px) {
-            display: none;
-          }
-        }
-        &:hover::after,
-        &.active::after{
-          width: 100%;
-        }
-        @media (max-width: 767px) {
-          padding: 0;
-        }
-        @media (max-width: 767px) {
-          &:hover {
-            color: $main-color;
-          }
-        }
-      }
-      @media (max-width: 767px) {
-        margin-bottom: 1rem;
-      }
-    }
-  }
-
 }

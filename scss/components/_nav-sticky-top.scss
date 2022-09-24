@@ -1,0 +1,45 @@
+.nav-shadow.white {
+  background-color: white;
+  box-shadow: 0 .5rem 2rem rgba(0,0,0,.08);
+  transition: 0.5s;
+  .navb {
+    nav {
+      .navbar-nav {
+        .nav-link {
+          color: black;
+        }
+        .nav-item {
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            @include maintransform (translateX(-50%));
+            height: 1px;
+            width: 0;
+            background-color: $main-color;
+            @include maintransition ($main-transition);
+            @media (max-width: 767px) {
+              display: none;
+            }
+          }
+          &:hover::before,
+          &.active::before{
+            width: 100%;
+          }
+          .option-one {
+            &::after {
+              background: black;
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 767px) {
+    max-width: 100%;
+  }
+  }
+  @media (max-width: 767px) {
+    box-shadow: none;
+  }
+}

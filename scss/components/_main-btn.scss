@@ -1,13 +1,15 @@
 .main-btn {
-  background-color: $secondary-color;
   width: fit-content;
   display: flex;
   align-items: center;
-  a {
+  button {
     padding: 17px 23px 17px 17px;
     color: white;
     font-weight: bold;
     font-size: 13px;
+    outline: none;
+    border: none;
+    background-color: $secondary-color;
     &:hover svg {
       @include mainanimation (moving-arrow 0.5s linear infinite alternate);
     }

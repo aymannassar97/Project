@@ -1,11 +1,21 @@
-.navbar-nav, .data {
-  .Options {
-    .drop-menu {
-      @include border-radius (10px);
+.options {
+  .drop-menu {
+    @media (max-width: 767px) {
+      border: none;
+      width: 100%;
+      background-color: transparent;
+    }
+    .items {
       @media (max-width: 767px) {
-        border: none;
-        width: 100%;
+        width: fit-content;
+        padding: 0.8rem 1rem 0.8rem 1rem;
       }
     }
   }
 }
+.nav-link {
+  @media (max-width: 767px) {
+    width: fit-content;
+  } 
+}
+

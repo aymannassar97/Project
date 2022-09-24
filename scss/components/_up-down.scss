@@ -1,11 +1,15 @@
-.Option-one {
+.option-one {
   &::after {
-    font-family: "Font Awesome 6 Free";
-    content: "\f107";
-    font-weight: 900;
     position: absolute;
     right: 0;
     top: 50%;
+    width: 16px;
+    height: 12px;
+    @include maintransition ($main-transition);
     @include maintransform (translateY(-50%));
+    @include get-bootstrap-icon('chevron-down', black);
+  }
+  &:hover::after {
+    background: $secondary-color;
   }
 }
