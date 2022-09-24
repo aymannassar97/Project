@@ -9,7 +9,6 @@
   <!-- Flag Icon -->
   <link rel="stylesheet" href="node_modules/flag-icons/css/flag-icons.min.css">
   <!-- Bootstrap icon -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
   <!-- Main Template Css File -->
   <link rel="stylesheet" href="css/project.css">
@@ -19,255 +18,280 @@
   <span class="to-top bg-white d-flex justify-content-center align-items-center position-fixed border rounded-circle border-0 bottom-0 end-0 me-3 mb-3">
     <i class="bi bi-chevron-up"></i>
   </span>
+
   <!-- ٍStart main page -->
-  <div>
-    <!-- Start Header -->
-    <div class="nav-header d-flex flex-column">
-      <!-- Start top nav -->
-      <div class="container order-last order-md-first d-none d-md-block "> <!-- d-none d-md-block -->
-        <div class="account pt-1 d-flex flex-column flex-md-row align-items-md-center justify-content-end">
-          <!-- Start language -->
-          <div class="nav-item dropdown Options me-5">
-            <a class="nav-link Option-one py-2 pe-4 position-relative me-1" href="#" id="navbarDropdown" data-bs-toggle="dropdown">
-              <span class="fi fi-us flag me-2"></span>
-              English
-            </a>
-            <ul  class="dropdown-menu drop-menu" aria-labelledby="navbarDropdown">
-              <li  class="dropdown-item items"><span class="fi fi-us me-2"></span>
-                <a href="#" class="active">English</a>
+  <!-- Start Header -->
+  <div class="nav-header">
+    <!-- Start top nav -->
+    <div class="container-md order-last order-md-first"> <!-- d-none d-md-block -->
+      <div class="account pt-1 d-flex flex-column flex-md-row align-items-md-center justify-content-end">
+        <!-- Start language -->
+        <div class="btn-group options me-5">
+          <a class="option-one py-2 pe-4 position-relative me-1" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+            <span class="fi fi-us flag me-2"></span>
+            English
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start drop-menu">
+            <li  class="dropdown-item items"><span class="fi fi-us me-2"></span>
+              <a href="#" class="fw-bold">English</a>
+            </li>
+            <li  class="dropdown-item items"><span class="fi fi-se me-2"></span>
+              <a href="#">Swedish</a>
+            </li>
+          </ul>
+        </div>
+        <!-- End language -->
+        <!-- Start Help -->
+        <button type="button" class="contact d-block btn rounded-pill border-0 lead">
+          contact us
+        </button>
+        <!-- End Help -->
+      </div>
+    </div>
+    <!-- Start top nav -->
+    <!-- Start nav shadow-->
+    <div class="nav-shadow">
+      <!-- Start navb-->
+      <div class="navb container-md">
+        <!-- Start Nav -->
+        <nav class="navbar navbar-expand-md flex-md-row align-items-center">
+          <!-- Start logo -->
+          <a href="#" class="navbar-brand me-5 d-block d-none d-md-block">
+            <img src="images/logo/logo.png" alt="logo"> 
+          </a>
+          <!-- End logo -->
+          <!-- Start menu nav -->
+          <div class="nav-items "> <!-- collapse navbar-collapse -->
+            <ul class="navbar-nav">
+              <li class="nav-item me-3 position-relative options">
+                <a class="nav-link py-3 fw-bold" href="#">
+                  Home
+                </a>
               </li>
-              <li  class="dropdown-item items"><span class="fi fi-se me-2"></span>
-                <a href="#">Swedish</a>
+              <li class="nav-item dropdown options me-3 ">
+                <a class="nav-link option-one py-3 pe-4 position-relative" href="#" id="navbarDropdown" data-bs-toggle="dropdown">
+                  Land Land
+                </a>
+                <ul class="dropdown-menu drop-menu" aria-labelledby="navbarDropdown">
+                  <li  class="dropdown-item items">
+                    <a href="#">Lorem, ipsum</a>
+                  </li>
+                  <li  class="dropdown-item items">
+                    <a href="#">Lorem, ipsum</a>
+                  </li>
+                  <li  class="dropdown-item items">
+                    <a href="#">Lorem, ipsum</a>
+                  </li>
+                  <li  class="dropdown-item items">
+                    <a href="#">Lorem, ipsum</a>
+                  </li>
+                </ul>
               </li>
+              <!-- End drop one -->
+              <!-- Start drop two -->
+              <li class="nav-item dropdown options me-3">
+                <a class="nav-link option-one py-3 pe-4 position-relative" href="#" id="navbarDropdown" data-bs-toggle="dropdown">
+                  Link Link Link
+                </a>
+                <ul class="dropdown-menu drop-menu" aria-labelledby="navbarDropdown">
+                  <li  class="dropdown-item items">
+                    <a href="#">Lorem, ipsum</a>
+                  </li>
+                  <li  class="dropdown-item items">
+                    <a href="#">Lorem, ipsum</a>
+                  </li>
+                  <li  class="dropdown-item items">
+                    <a href="#">Lorem, ipsum </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- End drop two -->
+              <li class="nav-item me-3 position-relative options"><a class="nav-link py-3" href="#">Contact</a></li>
+              <li class="nav-item me-3 position-relative options"><a class="nav-link py-3" href="#">About</a></li>
             </ul>
           </div>
-          <!-- End language -->
-          <!-- Start Help -->
-          <button type="button" class="contact btn rounded-pill border-0 lead">
-            contact us
-          </button>
-          <!-- End Help -->
-        </div>
+          <!-- End menu nav -->
+        </nav>
+        <!-- End Nav -->
       </div>
-      <!-- Start top nav -->
-      <!-- Start nav shadow-->
-      <div class="nav-shadow">
-        <!-- Start navb-->
-        <div class="navb container">
-          <!-- Start Nav -->
-          <nav class="navbar navbar-expand-md flex-md-row align-items-center">
-            <!-- Start logo -->
-            <a href="#" class="navbar-brand me-5 d-block">
-              <img src="images/logo/logo.png" alt="logo"> 
-            </a>
-            <!-- End logo -->
-            <!--Start close menu button -->
-            <div class="wrapper d-md-none" >
-              <button data-label="Menu" role="button" class="menu-toggle">
-              <span class="icon-bars"></span>
-              </button>
-            </div>
-            <!--End close menu button -->
-            <!-- Start menu nav -->
-            <div class="nav-items collapse navbar-collapse"> <!-- collapse navbar-collapse -->
-              <ul class="navbar-nav">
-                <li class="nav-item me-3 position-relative">
-                  <a class="nav-link py-3 active-1" href="#">
-                    Home
-                  </a>
-                </li>
-                <li class="nav-item dropdown Options me-3 ">
-                  <a class="nav-link Option-one py-3 pe-4 position-relative" href="#" id="navbarDropdown" data-bs-toggle="dropdown">
-                    Land Land
-                  </a>
-                  <ul class="dropdown-menu drop-menu" aria-labelledby="navbarDropdown">
-                    <li  class="dropdown-item items">
-                      <a href="#">Lorem, ipsum</a>
-                    </li>
-                    <li  class="dropdown-item items">
-                      <a href="#">Lorem, ipsum</a>
-                    </li>
-                    <li  class="dropdown-item items">
-                      <a href="#">Lorem, ipsum</a>
-                    </li>
-                    <li  class="dropdown-item items">
-                      <a href="#">Lorem, ipsum</a>
-                    </li>
-                  </ul>
-                </li>
-                <!-- End drop one -->
-                <!-- Start drop two -->
-                <li class="nav-item dropdown Options me-3">
-                  <a class="nav-link Option-one py-3 pe-4 position-relative" href="#" id="navbarDropdown" data-bs-toggle="dropdown">
-                    Link Link Link
-                  </a>
-                  <ul class="dropdown-menu drop-menu" aria-labelledby="navbarDropdown">
-                    <li  class="dropdown-item items">
-                      <a href="#">Lorem, ipsum</a>
-                    </li>
-                    <li  class="dropdown-item items">
-                      <a href="#">Lorem, ipsum</a>
-                    </li>
-                    <li  class="dropdown-item items">
-                      <a href="#">Lorem, ipsum </a>
-                    </li>
-                  </ul>
-                </li>
-                <!-- End drop two -->
-                <li class="nav-item me-3 position-relative"><a class="nav-link py-3" href="#">Contact</a></li>
-                <li class="nav-item me-3 position-relative"><a class="nav-link py-3" href="#">About</a></li>
-              </ul>
-            </div>
-            <!-- End menu nav -->
-          </nav>
-          <!-- End Nav -->
-        </div>
-        <!-- ُEnd navb -->
-      </div>
-      <!-- End nav shadow-->
+      <!-- ُEnd navb -->
     </div>
-    <!-- End Header -->
-    <!-- Start main content -->
-    <div class="main-content-1">
-      <div class="wavy-header-1">
-        <div class="container-md">
-          <div class="text">
-            <h1>We build digital solutions for your <span>big ideas</span></h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et cum illo, quas quaerat suscipit maxime aspernatur explicabo nulla possimus nemo!</p>
-            <div class="main-btn rounded-1">
-              <a href="#" class="d-block">
-                Get in touch with wsem
-                <i class="fa-solid fa-angle-right"></i>
-              </a>
-            </div>
+    <!-- End nav shadow-->
+  </div>
+  <!-- End Header -->
+  <!-- Start site header in mobile-->
+  <div class="sticky-top bg-white container-md d-flex d-md-none align-items-center justify-content-between">
+    <div>
+      <a href="#" class="m-1">
+        <img src="images/logo/logo.png" alt="logo"> 
+      </a>
+    </div>
+    <div class="wrapper m-1" >
+      <button data-label="Menu" role="button" class="menu-toggle">
+      <span class="icon-bars"></span>
+      </button>
+    </div>
+  </div>
+  <!-- End site header -->
+  <!-- Start main content -->
+  <div class="main-content-1">
+    <span class="wavy-header-1" style="background-image: url('');">
+      <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+        <g transform="translate(-109, -101)">
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color: rgb(28, 25, 89);"></stop>
+              <stop offset="100%" style="stop-color: rgb(2, 62, 138);"></stop>
+            </linearGradient>
+          </defs>
+          <path class="blob" d="M301.5,357Q127,464,129.5,254.5Q132,45,304,147.5Q476,250,301.5,357Z" fill="url(#gradient)"></path>
+        </g>
+      </svg>
+    </span>
+      <div class="container-md">
+        <div class="text">
+          <h1>We build digital solutions for your <span>big ideas</span></h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et cum illo, quas quaerat suscipit maxime aspernatur explicabo nulla possimus nemo!</p>
+          <div class="main-btn rounded-1">
+            <button href="#" class="d-block">
+              Get in touch with wsem
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
           </div>
         </div>
       </div>
+    <div class="Waves">
+      <svg version="1.1" class="shape__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1366 231" preserveAspectRatio="none" style="enable-background:new 0 0 1366 231;" xml:space="preserve"><path fill="#ffffff" d="M0,54c0,0,106,134,307,101c246-63,285-39,368-22c106,33,225,90,292,62c109-39,255-191,399-178 c0,128,0,214,0,214H0V54z"></path> <path fill="#ffffff" style="opacity: 0.45" d="M-1,231h188h1178c0,0,2-104,0-214c-297,10-383,309-632,143c-39,0-122,51-325-17C172,216-1,31-1,31"></path> <path fill="#ffffff" style="opacity: 0.45" d="M1366,227c0,0,0-71.03,0-203c-198-44-439,252-559,156c-13,1,0.7-9.44-53-20c-116.23-22.86-254.55-23.5-371-17 C157,121-4,172.01-4,172.01"></path></svg>
     </div>
-    <!-- End main content -->
-    <!-- Start cards -->
-    <div class="cards container">
-        <!-- Start card 1 -->
-        <article class="body-card card-one row gx-6 justify-content-between align-items-center">
-          <div class="img-card position-relative col-lg-6 d-none d-lg-block">
-            <img src="images/cards/mobile-apps.jpg" class="img-fluid" alt="image">
-          </div>
-          <div class="text-card position-relative col-lg-6">
-            <h5>Connect your idea smartly</span>
-            <h1>Mobile Applications</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sequi provident sit aliquam molestias nihil corporis modi labore enim, ut soluta mollitia exercitationem iusto eum, praesentium dolor at minima facilis.</p>
-            <a href="#">
-              More about smart connections<i class="fa-solid fa-angle-right ms-1"></i></a>
-            </a>
-          </div>
-        </article>
-        <!-- end card 1 -->
-        <!-- Start card 2 -->
-        <article class="body-card card-two row gx-6 justify-content-between align-items-center">
-          <div class="text-card position-relative col-lg-6">
-            <h5>Make your idea interactive</h5>
-            <h1>Web Applications</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sequi provident sit aliquam molestias nihil corporis modi labore enim, ut soluta mollitia exercitationem iusto eum, praesentium dolor at minima facilis.</p>
-            <a href="#">
-              More about interactive applications<i class="fa-solid fa-angle-right ms-1"></i></a>
-            </a>
-          </div>
-          <div class="img-card position-relative col-lg-6 d-none d-lg-block">
-            <img src="images/cards/web-apps.jpg" class="img-fluid" alt="image">
-          </div>
-        </article>
-        <!-- end card 2 -->
-        <!-- Start card 3 -->
-        <article class="body-card card-three row gx-6 justify-content-between align-items-center">
-          <div class="img-card position-relative col-lg-6 d-none d-lg-block">
-            <img src="images/cards/web-design.jpg" class="img-fluid" alt="image">
-          </div>
-          <div class="text-card position-relative col-lg-6">
-            <h5>Make your idea attractive</h5>
-            <h1>Web Design</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sequi provident sit aliquam molestias nihil corporis modi labore enim, ut soluta mollitia exercitationem iusto eum, praesentium dolor at minima facilis.</p>
-            <a href="#">
-              More about attractive designs<i class="fa-solid fa-angle-right ms-1"></i></a>
-            </a>
-          </div>
-        </article>
-        <!-- End card 3 -->
-        <!-- Start card 4 -->
-        <article class="body-card card-four row gx-6 justify-content-between align-items-center">
-          <div class="text-card position-relative col-lg-6">
-            <h5>Lorem, ipsum.</h5>
-            <h1>Lorem, ipsum dolor.</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sequi provident sit aliquam molestias nihil corporis modi labore enim, ut soluta mollitia exercitationem iusto eum, praesentium dolor at minima facilis.</p>
-            <a href="#">
-              Lorem ipsum dolor sit
-              <i class="fa-solid fa-angle-right ms-1"></i></a>
-            </a>
-          </div>
-          <div class="img-card position-relative col-lg-6 d-none d-lg-block">
-            <img src="images/cards/card-4.jpg" class="img-fluid" alt="image">
-          </div>
-        </article>
-        <!-- End card 4 -->
+  </div>
+  <!-- End main content -->
+  <!-- Start cards -->
+  <div class="cards container">
+      <!-- Start card 1 -->
+      <article class="body-card card-one row gx-6 justify-content-between align-items-center">
+        <div class="img-card position-relative col-lg-6 d-none d-lg-block">
+          <img src="images/cards/mobile-apps.jpg" class="img-fluid " alt="image">
+        </div>
+        <div class="text-card position-relative col-lg-6">
+          <h5>Connect your idea smartly</span>
+          <h1>Mobile Applications</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sequi provident sit aliquam molestias nihil corporis modi labore enim, ut soluta mollitia exercitationem iusto eum, praesentium dolor at minima facilis.</p>
+          <a href="#">
+            More about smart connections<i class="fa-solid fa-angle-right ms-1"></i></a>
+          </a>
+        </div>
+      </article>
+      <!-- end card 1 -->
+      <!-- Start card 2 -->
+      <article class="body-card card-two row gx-6 justify-content-between align-items-center">
+        <div class="text-card position-relative col-lg-6">
+          <h5>Make your idea interactive</h5>
+          <h1>Web Applications</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sequi provident sit aliquam molestias nihil corporis modi labore enim, ut soluta mollitia exercitationem iusto eum, praesentium dolor at minima facilis.</p>
+          <a href="#">
+            More about interactive applications<i class="fa-solid fa-angle-right ms-1"></i></a>
+          </a>
+        </div>
+        <div class="img-card position-relative col-lg-6 d-none d-lg-block">
+          <img src="images/cards/web-apps.jpg" class="img-fluid" alt="image">
+        </div>
+      </article>
+      <!-- end card 2 -->
+      <!-- Start card 3 -->
+      <article class="body-card card-three row gx-6 justify-content-between align-items-center">
+        <div class="img-card position-relative col-lg-6 d-none d-lg-block">
+          <img src="images/cards/web-design.jpg" class="img-fluid" alt="image">
+        </div>
+        <div class="text-card position-relative col-lg-6">
+          <h5>Make your idea attractive</h5>
+          <h1>Web Design</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sequi provident sit aliquam molestias nihil corporis modi labore enim, ut soluta mollitia exercitationem iusto eum, praesentium dolor at minima facilis.</p>
+          <a href="#">
+            More about attractive designs<i class="fa-solid fa-angle-right ms-1"></i></a>
+          </a>
+        </div>
+      </article>
+      <!-- End card 3 -->
+      <!-- Start card 4 -->
+      <article class="body-card card-four row gx-6 justify-content-between align-items-center">
+        <div class="text-card position-relative col-lg-6">
+          <h5>Lorem, ipsum.</h5>
+          <h1>Lorem, ipsum dolor.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sequi provident sit aliquam molestias nihil corporis modi labore enim, ut soluta mollitia exercitationem iusto eum, praesentium dolor at minima facilis.</p>
+          <a href="#">
+            Lorem ipsum dolor sit
+            <i class="fa-solid fa-angle-right ms-1"></i></a>
+          </a>
+        </div>
+        <div class="img-card position-relative col-lg-6 d-none d-lg-block">
+          <img src="images/cards/card-4.jpg" class="img-fluid" alt="image">
+        </div>
+      </article>
+      <!-- End card 4 -->
+  </div>
+  <!-- End cards -->
+  <!-- Start footer -->
+  <footer class="position-relative">
+    <div class="waves">
+      <svg version="1.1" class="shape__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1366 231" preserveAspectRatio="none" style="enable-background:new 0 0 1366 231;" xml:space="preserve"><path fill="#ffffff" d="M0,54c0,0,106,134,307,101c246-63,285-39,368-22c106,33,225,90,292,62c109-39,255-191,399-178 c0,128,0,214,0,214H0V54z"></path> <path fill="#ffffff" style="opacity: 0.45" d="M-1,231h188h1178c0,0,2-104,0-214c-297,10-383,309-632,143c-39,0-122,51-325-17C172,216-1,31-1,31"></path> <path fill="#ffffff" style="opacity: 0.45" d="M1366,227c0,0,0-71.03,0-203c-198-44-439,252-559,156c-13,1,0.7-9.44-53-20c-116.23-22.86-254.55-23.5-371-17 C157,121-4,172.01-4,172.01"></path></svg>
     </div>
-    <!-- End cards -->
-    <!-- Start footer -->
-    <footer class="position-relative">
-      <div class="waves">
-        <svg version="1.1" class="shape__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1366 231" preserveAspectRatio="none" style="enable-background:new 0 0 1366 231;" xml:space="preserve"><path fill="#ffffff" d="M0,54c0,0,106,134,307,101c246-63,285-39,368-22c106,33,225,90,292,62c109-39,255-191,399-178 c0,128,0,214,0,214H0V54z"></path> <path fill="#ffffff" style="opacity: 0.45" d="M-1,231h188h1178c0,0,2-104,0-214c-297,10-383,309-632,143c-39,0-122,51-325-17C172,216-1,31-1,31"></path> <path fill="#ffffff" style="opacity: 0.45" d="M1366,227c0,0,0-71.03,0-203c-198-44-439,252-559,156c-13,1,0.7-9.44-53-20c-116.23-22.86-254.55-23.5-371-17 C157,121-4,172.01-4,172.01"></path></svg>
-      </div>
-      <div class="foot container">
-        <!-- Start about -->
-        <div class="Link-Lists row gx-5 justify-content-between">
-          <div class="col-md-6 col-lg-4 mb-3">
-            <img src="/images/logo/logo.png" alt="logo" class="mb-3">
-            <p class="text-white pe-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima fugit voluptatibus cum quas blanditiis, dolore optio ducimus repellat sed ab!</p>
-            <span><a href="#" class="d-flex align-items-center mb-2"><i class="bi bi-telephone fs-5 me-2"></i>123-456-789</a></span>
-            <span><a href="#" class="d-flex align-items-center mb-2"><i class="bi bi-envelope fs-5 me-2"></i>info@wsem.com</a></span>
-            <ul class="p-0 d-flex">
-              <li><a href="#"><i class="bi bi-facebook fs-4 me-3 facebook"></i></a></li>
-              <li><a href="#"><i class="bi bi-instagram fs-4 me-3 instgram"></i></a></li>
-              <li><a href="#"><i class="bi bi-twitter fs-4 me-3 twitter"></i></a></li>
-            </ul>
-          </div>
-          <div class="links col-md-6 col-lg-2 mb-3">
-              <h5 class="mb-3 fw-bold fs-5 text-white">Pages</h5>
-              <ul class="p-0">
-                <li class="mb-2"><a href="#" class="active-1">Home</a></li>
-                <li class="mb-2"><a href="#">About</a></li>
-                <li class="mb-2"><a href="#">Services</a></li>
-                <li class="mb-2"><a href="#">Pricing</a></li>
-                <li class="mb-2"><a href="#">Contact</a></li>
-              </ul>
-          </div>
-          <div class="links col-md-6 col-lg-3 mb-3">
-            <h5 class="mb-3 fw-bold fs-5 text-white">Services</h5>
+    <div class="foot container">
+      <!-- Start about -->
+      <div class="Link-Lists row gx-5 justify-content-between">
+        <div class="col-md-6 col-lg-4 mb-3">
+          <img src="/images/logo/logo.png" alt="logo" class="mb-3">
+          <p class="text-white pe-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima fugit voluptatibus cum quas blanditiis, dolore optio ducimus repellat sed ab!</p>
+          <span><a href="#" class="d-flex align-items-center mb-2"><i class="bi bi-telephone fs-5 me-2"></i>123-456-789</a></span>
+          <span><a href="#" class="d-flex align-items-center mb-2"><i class="bi bi-envelope fs-5 me-2"></i>info@wsem.com</a></span>
+          <ul class="p-0 d-flex">
+            <li><a href="#"><i class="bi bi-facebook fs-4 me-3 facebook"></i></a></li>
+            <li><a href="#"><i class="bi bi-instagram fs-4 me-3 instgram"></i></a></li>
+            <li><a href="#"><i class="bi bi-twitter fs-4 me-3 twitter"></i></a></li>
+          </ul>
+        </div>
+        <div class="links col-md-6 col-lg-2 mb-3">
+            <h5 class="mb-3 fw-bold fs-5 text-white">Pages</h5>
             <ul class="p-0">
-              <li class="mb-2"><a href="#">More for business</a></li>
-              <li class="mb-2"><a href="#">More for business</a></li>
-              <li class="mb-2"><a href="#">More for business</a></li>
-              <li class="mb-2"><a href="#">More for business</a></li>
-              <li class="mb-2"><a href="#">More for business</a></li>
+              <li class="mb-2"><a href="#" class="active-1">Home</a></li>
+              <li class="mb-2"><a href="#">About</a></li>
+              <li class="mb-2"><a href="#">Services</a></li>
+              <li class="mb-2"><a href="#">Pricing</a></li>
+              <li class="mb-2"><a href="#">Contact</a></li>
             </ul>
-          </div>
-          <div class="links col-md-6 col-lg-3 mb-3">
-            <h5 class="mb-3 fw-bold fs-5 text-white">More info</h5>
-            <ul class="p-0">
-              <li class="mb-2"><a href="#">Getting started now</a></li>
-              <li class="mb-2"><a href="#">Getting started now</a></li>
-              <li class="mb-2"><a href="#">Getting started now</a></li>
-            </ul>
-          </div>
         </div>
-        <!-- End about -->
+        <div class="links col-md-6 col-lg-3 mb-3">
+          <h5 class="mb-3 fw-bold fs-5 text-white">Services</h5>
+          <ul class="p-0">
+            <li class="mb-2"><a href="#">More for business</a></li>
+            <li class="mb-2"><a href="#">More for business</a></li>
+            <li class="mb-2"><a href="#">More for business</a></li>
+            <li class="mb-2"><a href="#">More for business</a></li>
+            <li class="mb-2"><a href="#">More for business</a></li>
+          </ul>
+        </div>
+        <div class="links col-md-6 col-lg-3 mb-3">
+          <h5 class="mb-3 fw-bold fs-5 text-white">More info</h5>
+          <ul class="p-0">
+            <li class="mb-2"><a href="#">Getting started now</a></li>
+            <li class="mb-2"><a href="#">Getting started now</a></li>
+            <li class="mb-2"><a href="#">Getting started now</a></li>
+          </ul>
+        </div>
       </div>
-      <hr class="border border-white">
-      <div class="text-center text-white container">
-        &copy; 2022 wsem copyrights reserved
-      </div>
-    </footer>
-    <!-- End footer -->
+      <!-- End about -->
     </div>
+    <hr class="border border-white">
+    <div class="text-center text-white container">
+      &copy; 2022 wsem copyrights reserved
+    </div>
+  </footer>
+  <!-- End footer -->
   <!-- End main page -->
+
+
+
+
+
 
 
 
