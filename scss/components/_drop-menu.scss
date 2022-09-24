@@ -1,14 +1,14 @@
 .drop-menu {
+  @include border-radius (10px);
   .items {
     cursor: pointer;
     padding: 0.8rem 1rem 0.8rem 1rem ;
     @include maintransition ($main-transition);
-    .active {
-      font-weight: bold;
-    }
-    @media (max-width: 767px) {
-      width: fit-content;
-      padding: 0.8rem 1rem 0.8rem 1rem;
+    a {
+      color: black;
+      &:hover {
+        color: $main-color;
+      }
     }
   }
 }
