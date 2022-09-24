@@ -21,6 +21,7 @@
 @import "../scss/helpers/mixins/prefixer-mixin";
 @import "../scss/helpers/mixins/transition-mixin";
 @import "../scss/helpers/mixins/transform-mixin";
+@import "../scss/helpers/mixins/icons-mixin";
 
 @import "../scss/helpers/map";
 
@@ -36,7 +37,7 @@
 @import "../scss/components/nav";
 @import "../scss/components/btn-close-menu";
 @import "../scss/components/dropdown-mob";
-@import "../scss/components/hover-link";
+@import "../scss/components/nav-sticky-top";
 @import "../scss/components/main-btn";
 @import "../scss/components/cards";
 @import "../scss/components/text-card";
