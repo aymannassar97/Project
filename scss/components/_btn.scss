@@ -1,19 +1,14 @@
 .contact {
   background-color: $main-color;
-  transition: $main-transition;
+  @include maintransition ($main-transition);
   color: white;
   &:hover {
     background-color: $secondary-color;
   }
   @media (max-width: 767px) {
     width: fit-content;
-    color: black;
-    margin: auto;
+    margin: auto auto 30px auto;
     padding: 8px 40px;
     font-weight: bold;
-    &:hover {
-      background-color: $main-color;
-      color: white;
-    }
   }
 }
